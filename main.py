@@ -58,9 +58,14 @@ while win == 0:
         win = 1
         break
     
-    if (tablero[1] == p1 or tablero[1] == p2) and (tablero[2] == p1 or tablero[2] == p2) and (tablero[3] == p1 or tablero[3] == p2) and (tablero[4] == p1 or tablero[4] == p2) and (tablero[5] == p1 or tablero[5] == p2) and (tablero[6] == p1 or tablero[6] == p2) and (tablero[7] == p1 or tablero[7] == p2) and (tablero[8] == p1 or tablero[8] == p2) and (tablero[9] == p1 or tablero[9] == p2):
+    for i in range(1,10):
+        if tablero[i] == p1 or tablero[i] == p2:
+            cont += 1
+    if cont == 9:
         win = 3
         break
+    else:
+        cont = 0
 
     #Ficha de P2
     print(f" {tablero[7]} | {tablero[8]} | {tablero[9]} ")
@@ -84,9 +89,14 @@ while win == 0:
         win = 2
         break
 
-    if (tablero[1] == p1 or tablero[1] == p2) and (tablero[2] == p1 or tablero[2] == p2) and (tablero[3] == p1 or tablero[3] == p2) and (tablero[4] == p1 or tablero[4] == p2) and (tablero[5] == p1 or tablero[5] == p2) and (tablero[6] == p1 or tablero[6] == p2) and (tablero[7] == p1 or tablero[7] == p2) and (tablero[8] == p1 or tablero[8] == p2) and (tablero[9] == p1 or tablero[9] == p2):
+    for i in range(1,10):
+        if tablero[i] == p1 or tablero[i] == p2:
+            cont += 1
+    if cont == 9:
         win = 3
         break
+    else:
+        cont = 0
 
 print(f" {tablero[7]} | {tablero[8]} | {tablero[9]} ")
 print(f"-----------")
